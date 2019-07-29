@@ -1,0 +1,288 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  position: fixed;
+  height: 80%;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  display: none;
+}
+
+.nav-title {
+  color: #fed316;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.75em;
+  font-style: italic;
+  margin-right: 25px;
+}
+
+.right-nav {
+  color: white;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 1;
+  margin-left: 100px;
+}
+
+.header {
+  background-image: url("http://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 759px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-container {
+  height: 40%;
+  width: 90%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.header-container > h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 5em;
+}
+
+.header-container > h2 {
+  font-size: 3em;
+  font-style: italic;
+}
+
+.header-container > button {
+  background-color: #fed316;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 5px;
+  width: 225px;
+  height: 69px;
+}
+
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-container {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services-title {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services-title > h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services-title > p {
+  font-style: italic;
+  font-size: 1.25em;
+  color: grey;
+}
+
+.icon {
+  background-color: #fed316;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-shopping-cart {
+  color: white;
+  font-size: 4em;
+}
+.fa-laptop {
+  color: white;
+  font-size: 4em;
+}
+.fa-lock {
+  color: white;
+  font-size: 4em;
+}
+
+.articles {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.block {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.block > h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.block > p {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.15em;
+  color: gray;
+  width: 100%;
+  line-height: 30px;
+}
+
+.menu-btn {
+  display: none;
+  border-style: none;
+  width: 78px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #fed316;
+  color: white;
+}
+
+@media (max-width: 1045px) {
+  .nav-bar {
+    height: 55px;
+    background-color: #212629;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 55px;
+  }
+}
+
+.open {
+  top: 55px;
+  position: absolute;
+  display: block;
+  background: #212629;
+  color: white;
+  height: 270px;
+  width: 100%;
+  animation-name: openMenu;
+  animation-direction: forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+.open > ul {
+  float: left;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.open > ul > li {
+  margin-left: 185px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 1;
+}
+
+.close {
+  top: 55px;
+  position: absolute;
+  display: block;
+  height: 270px;
+  width: 100%;
+  visibility: hidden;
+  animation: closeMenu;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes openMenu {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 270px;
+  }
+}
+
+@keyframes closeMenu {
+  from {
+    height: 270px;
+  }
+  to {
+    height: 0px;
+    visibility: hidden;
+  }
+}
