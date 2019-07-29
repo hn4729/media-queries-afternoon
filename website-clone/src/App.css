@@ -111,7 +111,7 @@ html {
 }
 
 .services-container {
-  width: 70%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -239,8 +239,6 @@ html {
 
 .close {
   z-index: 1;
-  top: 55px;
-  position: absolute;
   display: block;
   background: #212629;
   color: white;
@@ -288,6 +286,7 @@ html {
     display: none;
   }
 }
+
 @keyframes openMenu {
   from {
     height: 0px;
