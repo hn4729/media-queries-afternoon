@@ -207,26 +207,6 @@ html {
   color: white;
 }
 
-@media (max-width: 1045px) {
-  .nav-bar {
-    height: 55px;
-    background-color: #212629;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-
-  .right-nav {
-    display: none;
-  }
-
-  .nav-container {
-    width: 100%;
-    height: 55px;
-  }
-}
-
 .open {
   z-index: 1;
   top: 55px;
@@ -279,6 +259,35 @@ html {
   font-weight: 1;
 }
 
+@media (max-width: 1045px) {
+  .nav-bar {
+    height: 55px;
+    background-color: #212629;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 55px;
+  }
+}
+
+@media (min-width: 1045px) {
+  .open {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+}
 @keyframes openMenu {
   from {
     height: 0px;
